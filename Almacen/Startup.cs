@@ -17,17 +17,16 @@ namespace Almacen
     {
         public Startup(IConfiguration configuration)
         {
-            IConfiguration = configuration;
+            Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
-        public IConfiguration IConfiguration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            var connection = @"Server=PC-SADY;Database=Alma;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=DESKTOP-OFQSFIV;Database=Almacen;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<MyDbContext>(options => options.UseSqlServer(connection));
         }
 

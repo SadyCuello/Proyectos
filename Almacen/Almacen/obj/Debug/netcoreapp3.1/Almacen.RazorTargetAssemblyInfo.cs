@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute("Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFac" +
     "tory, Microsoft.AspNetCore.Mvc.Razor")]
-[assembly:  System.Reflection.AssemblyCompanyAttribute("Almacen")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Almacen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("Almacen")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
