@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almacen", "Almacen\Almacen.csproj", "{A3F29859-8B9B-4761-A0FC-9D2F154FCFCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3F29859-8B9B-4761-A0FC-9D2F154FCFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F29859-8B9B-4761-A0FC-9D2F154FCFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F29859-8B9B-4761-A0FC-9D2F154FCFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F29859-8B9B-4761-A0FC-9D2F154FCFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5514E35E-D2EF-4441-AF56-1CE90C88DA1E}
+	EndGlobalSection
+EndGlobal

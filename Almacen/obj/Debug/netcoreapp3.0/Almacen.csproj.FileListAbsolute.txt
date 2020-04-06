@@ -1,0 +1,8 @@
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\Almacen.csprojAssemblyReference.cache
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\staticwebassets\Almacen.StaticWebAssets.Manifest.cache
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\staticwebassets\Almacen.StaticWebAssets.xml
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\Almacen.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\Almacen.RazorAssemblyInfo.cache
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\Almacen.RazorAssemblyInfo.cs
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\Almacen.AssemblyInfoInputs.cache
+C:\Users\Sady\source\repos\Almacen\Almacen\obj\Debug\netcoreapp3.0\Almacen.AssemblyInfo.cs

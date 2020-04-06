@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Ventas>
+
+<form method="get" action=@Url.Action("Index", "Profesores" )>
+    <div class="col-xs-5">
+
+        @Html.TextBox("nombre", null, new
+        {
+            placeholder = "Buscar Por Nombre",
+
+        })
+        <button class="btn btn-info" type="submit">Buscar</button>
+    </div>
+
+</form>
+<br />
+<span class="table-add float-right mb-3 mr-2">
+    <a asp-action="Create" class="text-success">
+        Crear Ventas
+        <i class="fas fa-plus fa-2x" aria-hidden="true"></i>
+    </a>
+</span>
+<br />
+<br />
+<br />
+
+<div class="card">
+    <h3 class="card-header font-weight-bold text-uppercase py-4  text-center">
+        Ventas
+
+    </h3>
+
+</div>
+
+
+<div class="card-body">
+    <div class="table-responsive">
+        <div id="table" class="table-editable">
+
+            <table class="table table-bordered table-responsive-md table-striped text-center">
+                <thead>
+                    <tr>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Empleado)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Clientes)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Productos)
+                        </th>
+                        <th>
+                           Tiempo Que se Elaboro
+                        </th>
+                        <th class="text-center">Detalles</th>
+                        <th class="text-center">Opciones</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Empleado.Nombre, item.Empleado.Apellido)
+                                @Html.DisplayFor(modelItem => item.Empleado.Apellido)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Clientes.Nombre)
+                                @Html.DisplayFor(modelItem => item.Clientes.Apellido)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Productos.PaisOrigen)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DateTime)
+                            </td>
+                            <td>
+                                <!--Primer boton -->
+                                <span class="table-up">
+                                    <a asp-action="Details" asp-route-id="@item.VentasID" class="indigo-text">
+                                        <span style="font-size:25px; color: green; ">
+                                            <i class="fas fa-info-circle"
+                                               aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </span>
+                            </td>
+                            <td>
+                                <!--Segundo boton -->
+                                <span style="font-size: 25px; color: Dodgerblue; margin:2px;">
+                                    <a asp-action="Edit" asp-route-id="@item.VentasID" class="fas fa-user-edit"></a>
+                                </span>
+
+                                <!--Tercer boton -->
+                                <span style="font-size: 25px; color:red;">
+                                    <a asp-action="Delete" asp-route-id="@item.VentasID">
+                                        <span style="font-size: 25px; color: red; margin:2px;">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </span>
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+﻿@model Productos
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>¿Esta seguro de eliminar este producto?</h3>
+<div>
+    <h4>Productos</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PaisOrigen)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PaisOrigen)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ProductosID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a type="button" class="btn btn-primary" asp-action="Index">Volver atras </a> 
+    </form>
+</div>
